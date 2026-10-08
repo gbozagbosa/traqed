@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/gbozagbosa/traqed#readme",
   "type": "module",
-  "private": "true",
+  "private": true,
   "dependencies": {
     "@composio/core": "^0.22.0"
   },
