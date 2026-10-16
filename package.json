@@ -1,0 +1,26 @@
+{
+  "name": "traqed",
+  "version": "1.0.0",
+  "scripts": {
+    "composio": "tsx scripts/composio-first-call.ts",
+    "typecheck": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbozagbosa/traqed.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gbozagbosa/traqed/issues"
+  },
+  "homepage": "https://github.com/gbozagbosa/traqed#readme",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@composio/core": "^0.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
