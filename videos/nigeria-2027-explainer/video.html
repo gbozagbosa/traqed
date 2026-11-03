@@ -1,0 +1,186 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Nigeria 2027 Explained</title>
+<style>
+:root{--bg:#06261c;--bg2:#0b3d2e;--green:#00a86b;--flag:#008751;--white:#f5f7f4;--muted:#9fc2b2;--gold:#f2c14e;--card:rgba(255,255,255,.06);--line:rgba(255,255,255,.14)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1280px;height:720px;overflow:hidden;background:var(--bg);color:var(--white);font-family:Inter,sans-serif}
+#stage{position:absolute;inset:0;background:radial-gradient(1200px 700px at 80% -10%,#0f5a41 0%,transparent 60%),radial-gradient(900px 600px at -10% 110%,#0c4a36 0%,transparent 60%),var(--bg)}
+.flag{position:absolute;left:0;top:0;height:6px;width:100%;display:flex}
+.flag i{flex:1}.flag i:nth-child(1),.flag i:nth-child(3){background:var(--flag)}.flag i:nth-child(2){background:#fff}
+#prog{position:absolute;left:0;top:6px;height:3px;background:var(--gold);width:0}
+.brand{position:absolute;left:48px;top:30px;font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.brand b{color:var(--white)}
+.srcs{position:absolute;right:48px;top:30px;font-size:12px;color:var(--muted);text-align:right}
+.scene{position:absolute;left:0;top:0;width:100%;height:100%;padding:90px 80px 150px;opacity:0}
+.kicker{font-size:16px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:14px}
+h1{font-family:"Inter Display",Inter,sans-serif;font-weight:800;font-size:56px;line-height:1.05;letter-spacing:-.02em}
+h2{font-family:"Inter Display",Inter,sans-serif;font-weight:800;font-size:44px;line-height:1.1;letter-spacing:-.015em;margin-bottom:30px}
+.a{opacity:0;will-change:transform,opacity}
+.row{display:flex;gap:28px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px 28px;flex:1}
+.date{font-family:"Inter Display";font-weight:800;font-size:64px;line-height:1;color:var(--white)}
+.date small{display:block;font-size:18px;letter-spacing:.2em;color:var(--gold);font-weight:700;margin-bottom:10px}
+.lbl{font-size:20px;color:var(--muted);margin-top:14px;line-height:1.4}
+.lbl b{color:var(--white);font-weight:600}
+.big{font-family:"Inter Display";font-weight:800;font-size:76px;line-height:1;color:var(--white)}
+.big.gold{color:var(--gold)}
+.pill{display:inline-block;padding:8px 16px;border-radius:999px;background:rgba(242,193,78,.14);color:var(--gold);font-weight:600;font-size:18px;border:1px solid rgba(242,193,78,.35)}
+.strike{position:relative;display:inline-block;color:var(--muted)}
+.strike .bar{position:absolute;left:-4%;top:52%;height:5px;background:#e5534b;width:0;border-radius:3px}
+.arrow{font-size:60px;color:var(--gold);font-weight:800;align-self:center}
+.check{display:flex;gap:20px;align-items:flex-start;margin-bottom:22px;font-size:28px;line-height:1.3}
+.check .n{flex:0 0 46px;height:46px;border-radius:50%;background:var(--flag);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px}
+.meter{position:relative;height:30px;border-radius:15px;background:rgba(255,255,255,.08);border:1px solid var(--line);margin:8px 0 6px 66px;width:760px;overflow:hidden}
+.meter .fill{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,var(--flag),var(--green));width:0}
+.meter .mark{position:absolute;left:66.6%;top:-2px;bottom:-2px;width:3px;background:var(--gold)}
+.mlbl{margin-left:66px;width:760px;position:relative;height:24px;font-size:15px;color:var(--muted)}
+.mlbl span{position:absolute;left:66.6%;transform:translateX(-50%);color:var(--gold);font-weight:600}
+.cands{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:8px}
+.cand{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.cand .nm{font-size:25px;font-weight:700}
+.cand .pt{font-size:16px;color:var(--muted);margin-top:4px}
+.step{flex:1;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.step .sn{font-size:15px;letter-spacing:.18em;color:var(--gold);font-weight:700}
+.step .st{font-size:25px;font-weight:700;margin-top:10px;line-height:1.2}
+.step .sd{font-size:16px;color:var(--muted);margin-top:8px;line-height:1.4}
+#cap{position:absolute;left:50%;bottom:44px;transform:translateX(-50%);max-width:1080px;text-align:center;font-size:24px;line-height:1.35;font-weight:500;background:rgba(0,0,0,.55);padding:10px 20px;border-radius:10px;opacity:0}
+.foot{position:absolute;left:48px;bottom:14px;font-size:11px;color:rgba(255,255,255,.45)}
+</style></head>
+<body><div id="stage">
+<div class="flag"><i></i><i></i><i></i></div><div id="prog"></div>
+<div class="brand"><b>Explainer</b> · Nigeria 2027 General Elections</div>
+<div class="srcs" id="srcs"></div>
+
+<section class="scene" data-s="title" style="display:flex;flex-direction:column;justify-content:center">
+  <div class="kicker a" data-l="0">Explainer · Information as of 3 November 2026</div>
+  <h1 class="a" data-l="0" data-d=".2" style="font-size:96px">Nigeria's 2027<br>General Elections</h1>
+  <div class="a" data-l="1" style="margin-top:28px;font-size:28px;color:var(--muted)">Dates · Seats · Rules · Candidates · How to vote</div>
+</section>
+
+<section class="scene" data-s="dates">
+  <div class="kicker a" data-l="0">Two election days</div>
+  <h2 class="a" data-l="0" data-d=".1">One country, two Saturdays</h2>
+  <div class="row">
+    <div class="card a" data-l="1"><div class="date"><small>Saturday</small>16 Jan 2027</div>
+      <div class="lbl"><b>President</b> &amp; Vice President<br><b>Senate</b> &amp; <b>House of Representatives</b></div></div>
+    <div class="card a" data-l="2"><div class="date"><small>Saturday</small>6 Feb 2027</div>
+      <div class="lbl"><b>Governors</b> &amp; Deputies<br><b>State Houses of Assembly</b></div></div>
+  </div>
+</section>
+
+<section class="scene" data-s="moved">
+  <div class="kicker a" data-l="0">Why the dates moved</div>
+  <h2 class="a" data-l="0" data-d=".1">Earlier than first planned</h2>
+  <div class="row" style="align-items:stretch">
+    <div class="card a" data-l="1"><div class="date"><small>Original date</small><span class="strike">20 Feb 2027<span class="bar" data-strike="2"></span></span></div><div class="lbl">Set under the Electoral Act 2022</div></div>
+    <div class="arrow a" data-l="2">→</div>
+    <div class="card a" data-l="2" data-d=".3"><div class="date"><small>Revised date</small>16 Jan 2027</div><div class="lbl">Set after the Electoral Act 2026</div></div>
+  </div>
+  <div class="a" data-l="2" data-d=".8" style="margin-top:30px"><span class="pill">Electoral Act 2026 signed · 18 February 2026</span></div>
+</section>
+
+<section class="scene" data-s="seats">
+  <div class="kicker a" data-l="0">What's on the ballot</div>
+  <div class="row" style="margin-top:10px">
+    <div class="card a" data-l="0" data-d=".1"><div class="lbl" style="margin:0 0 8px">Day one · 16 Jan</div><div class="big" data-count="1">0</div><div class="lbl"><b>President</b></div></div>
+    <div class="card a" data-l="0" data-d="1.6"><div class="lbl" style="margin:0 0 8px">Day one · 16 Jan</div><div class="big" data-count="109">0</div><div class="lbl"><b>Senate seats</b></div></div>
+    <div class="card a" data-l="0" data-d="3.4"><div class="lbl" style="margin:0 0 8px">Day one · 16 Jan</div><div class="big" data-count="360">0</div><div class="lbl"><b>House of Reps seats</b></div></div>
+  </div>
+  <div class="row" style="margin-top:24px">
+    <div class="card a" data-l="1"><div class="lbl" style="margin:0 0 8px">Day two · 6 Feb</div><div class="big gold" data-count="28">0</div><div class="lbl"><b>Governorship races</b></div></div>
+    <div class="card a" data-l="1" data-d="2"><div class="lbl" style="margin:0 0 8px">Day two · 6 Feb</div><div class="big gold" data-count="36">0</div><div class="lbl"><b>State Houses of Assembly</b></div></div>
+    <div class="card a" data-l="2" style="flex:1.3"><div class="lbl" style="margin:0 0 8px">Off-cycle governorships (8 states)</div><div class="lbl" style="font-size:19px;color:var(--white)">Anambra · Bayelsa · Edo · Ekiti · Imo · Kogi · Ondo · Osun</div></div>
+  </div>
+</section>
+
+<section class="scene" data-s="win">
+  <div class="kicker a" data-l="0">How to win the presidency</div>
+  <h2 class="a" data-l="0" data-d=".1">Two tests in the first round</h2>
+  <div class="check a" data-l="1"><div class="n">1</div><div>The <b>most votes</b> nationwide</div></div>
+  <div class="check a" data-l="2"><div class="n">2</div><div>At least <b style="color:var(--gold)">25%</b> of the vote in at least <b>two-thirds</b> of the states and the FCT</div></div>
+  <div class="a" data-l="2" data-d=".6"><div class="meter"><div class="fill" data-fill="2"></div><div class="mark"></div></div><div class="mlbl"><span>two-thirds</span></div></div>
+  <div class="a" data-l="3" style="margin-top:14px"><span class="pill">No one clears the bar? → a second round is held</span></div>
+</section>
+
+<section class="scene" data-s="candidates">
+  <div class="row" style="align-items:flex-end;gap:22px">
+    <div class="big gold a" data-l="0" style="font-size:110px" data-count="18">0</div>
+    <div class="a" data-l="0" data-d=".2" style="padding-bottom:14px"><div class="kicker" style="margin:0">INEC final list · 12 Sep 2026</div><div style="font-size:34px;font-weight:700">presidential candidates</div></div>
+  </div>
+  <div class="lbl a" data-l="1" style="margin:16px 0 10px">Selected candidates, in alphabetical order by surname</div>
+  <div class="cands">
+    <div class="cand a" data-l="1" data-d="2.6"><div class="nm">Atiku Abubakar</div><div class="pt">ADC</div></div>
+    <div class="cand a" data-l="1" data-d="5.0"><div class="nm">Donald Duke</div><div class="pt">PRP</div></div>
+    <div class="cand a" data-l="1" data-d="7.1"><div class="nm">Seyi Makinde</div><div class="pt">APM</div></div>
+    <div class="cand a" data-l="1" data-d="9.4"><div class="nm">Peter Obi</div><div class="pt">NDC</div></div>
+    <div class="cand a" data-l="1" data-d="11.4"><div class="nm">Sandy Onor</div><div class="pt">PDP</div></div>
+    <div class="cand a" data-l="1" data-d="13.8"><div class="nm">Bola Tinubu</div><div class="pt">APC · incumbent</div></div>
+  </div>
+  <div class="a" data-l="2" style="margin-top:20px"><span class="pill">2 of the 18 candidates are women</span></div>
+</section>
+
+<section class="scene" data-s="vote">
+  <div class="kicker a" data-l="0">Election day</div>
+  <h2 class="a" data-l="0" data-d=".1">How voting works</h2>
+  <div class="row" style="gap:18px">
+    <div class="step a" data-l="0" data-d=".4"><div class="sn">STEP 1</div><div class="st">8:30 am – 2:30 pm</div><div class="sd">Accreditation and voting happen together</div></div>
+    <div class="step a" data-l="1"><div class="sn">STEP 2</div><div class="st">Bring your PVC</div><div class="sd">Permanent Voter Card</div></div>
+    <div class="step a" data-l="2"><div class="sn">STEP 3</div><div class="st">BVAS check</div><div class="sd">Bimodal Voter Accreditation System verifies you</div></div>
+    <div class="step a" data-l="3"><div class="sn">STEP 4</div><div class="st">Results online</div><div class="sd">Polling-unit results on INEC's results portal</div></div>
+  </div>
+</section>
+
+<section class="scene" data-s="numbers">
+  <div class="kicker a" data-l="0">By the numbers</div>
+  <div class="row" style="margin-top:30px">
+    <div class="card a" data-l="0" data-d=".2"><div class="big" style="font-size:88px"><span data-count="93">0</span>M+</div><div class="lbl"><b>Registered voters</b></div></div>
+    <div class="card a" data-l="1"><div class="big" style="font-size:88px"><span data-count="176">0</span>K+</div><div class="lbl"><b>Polling units</b></div></div>
+    <div class="card a" data-l="2"><div class="big gold" style="font-size:88px" data-count="22">0</div><div class="lbl"><b>Registered parties</b></div></div>
+  </div>
+  <div class="lbl a" data-l="2" data-d="1" style="font-size:15px;margin-top:22px">Figures as displayed on inecnigeria.org, late October 2026</div>
+</section>
+
+<section class="scene" data-s="cta" style="display:flex;flex-direction:column;justify-content:center">
+  <div class="check a" data-l="0"><div class="n">✓</div><div>Find your polling unit</div></div>
+  <div class="check a" data-l="0" data-d="1.6"><div class="n">✓</div><div>Collect your PVC</div></div>
+  <div class="check a" data-l="1"><div class="n">✓</div><div>Check rumours against INEC's official channels</div></div>
+  <h1 class="a" data-l="2" style="margin-top:26px;font-size:72px">Your vote. Your voice.</h1>
+  <div class="a" data-l="2" data-d="1.4" style="font-size:30px;color:var(--gold);font-weight:700;margin-top:10px">Saturday, 16 January 2027</div>
+</section>
+
+<div id="cap"></div>
+<div class="foot">Independent explainer, not produced by or affiliated with INEC or any party. Sources: INEC election calendar &amp; final candidate list (Sep 2026); 1999 Constitution, s.134. Information as of 3 Nov 2026.</div>
+</div>
+<script>
+const CAPS={
+ title:["Nigeria goes to the polls in January 2027.","Here's what you need to know about the general elections, in under three minutes."],
+ dates:["There are two election days.","On Saturday 16 January, Nigerians vote for the President and the National Assembly.","Three weeks later, on 6 February, they vote for governors and state Houses of Assembly."],
+ moved:["These dates are earlier than first planned.","INEC originally fixed 20 February for the presidential vote.","It revised the calendar after President Tinubu signed the Electoral Act 2026 in February 2026."],
+ seats:["On day one, voters choose a President, all 109 Senators and all 360 members of the House of Representatives.","On day two, 28 states elect a governor, and all 36 states elect their Houses of Assembly.","The other eight states hold governorship elections on their own, off-cycle calendar."],
+ win:["How does a candidate win the presidency?","They need the most votes nationwide.","And at least 25% of the vote in at least two-thirds of the states and the FCT.","If nobody clears that bar, a second round is held."],
+ candidates:["Eighteen candidates are on INEC's final presidential list.","In alphabetical order, they include Atiku Abubakar (ADC), Donald Duke (PRP), Seyi Makinde (APM), Peter Obi (NDC), Sandy Onor (PDP) and President Bola Tinubu (APC).","Two of the 18 candidates are women."],
+ vote:["On election day, accreditation and voting run from 8:30 am to 2:30 pm.","Bring your Permanent Voter Card.","Your identity is checked on the BVAS machine.","Results from each polling unit can then be viewed on INEC's online results portal."],
+ numbers:["By the numbers: more than 93 million registered voters.","More than 176,000 polling units.","And 22 registered political parties."],
+ cta:["So, find your polling unit. Collect your PVC.","And before you share a rumour about the election, check it against INEC's official channels.","Your vote. Your voice. 16 January 2027."]};
+let TL=null;
+const clamp=x=>Math.max(0,Math.min(1,x)), ease=x=>1-Math.pow(1-x,3);
+function splitCap(s){ if(s.length<=95) return s; const w=s.split(' '); let a='',i=0; while(i<w.length&&(a+w[i]).length<s.length/2){a+=w[i]+' ';i++} return a.trim()+'<br>'+w.slice(i).join(' ');}
+window.setTL=tl=>{TL=tl};
+window.render=t=>{
+  document.getElementById('prog').style.width=(100*t/TL.total)+'%';
+  for(const sc of TL.scenes){
+    const el=document.querySelector(`[data-s="${sc.id}"]`);
+    const op=Math.min(clamp((t-sc.start)/0.4),clamp((sc.end-t)/0.4));
+    el.style.opacity=op; el.style.display=op>0?'':'none'; if(op<=0)continue;
+    const L=i=>sc.lines[Math.min(i,sc.lines.length-1)].start;
+    el.querySelectorAll('.a').forEach(a=>{const tin=L(+a.dataset.l)+(+(a.dataset.d||0));const p=ease(clamp((t-tin)/0.55));a.style.opacity=p;a.style.transform=`translateY(${(1-p)*26}px)`;
+      a.querySelectorAll('[data-count]').forEach(c=>{const n=+c.dataset.count;c.textContent=Math.round(n*ease(clamp((t-tin)/1.1))).toLocaleString('en-GB')});
+      if(a.dataset.count){const n=+a.dataset.count;a.textContent=Math.round(n*ease(clamp((t-tin)/1.1)))}});
+    el.querySelectorAll('[data-strike]').forEach(b=>{b.style.width=(108*ease(clamp((t-L(+b.dataset.strike))/0.5)))+'%'});
+    el.querySelectorAll('[data-fill]').forEach(b=>{b.style.width=(72*ease(clamp((t-L(+b.dataset.fill)-0.9)/2.2)))+'%'});
+  }
+  const cap=document.getElementById('cap'); let txt='',o=0;
+  for(const sc of TL.scenes) sc.lines.forEach((ln,i)=>{ if(t>=ln.start-0.15&&t<=ln.end+0.3){txt=CAPS[sc.id][i];o=1} });
+  if(txt){cap.innerHTML=splitCap(txt)} cap.style.opacity=o;
+};
+</script></body></html>
