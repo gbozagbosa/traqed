@@ -1,0 +1,126 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Nigeria Today</title>
+<style>
+:root{--bg:#0d1117;--card:rgba(255,255,255,.05);--line:rgba(255,255,255,.13);--white:#f4f6f8;--muted:#9aa5b1;--green:#00a86b;--gold:#f2c14e;--red:#ef5b5b;--blue:#5b8def}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1280px;height:720px;overflow:hidden;background:var(--bg);color:var(--white);font-family:Inter,sans-serif}
+#stage{position:absolute;inset:0;background:radial-gradient(1100px 650px at 90% -20%,#1c2a22 0%,transparent 60%),radial-gradient(800px 600px at -10% 120%,#1a1f2b 0%,transparent 60%),var(--bg)}
+.flag{position:absolute;left:0;top:0;height:5px;width:100%;display:flex}.flag i{flex:1}.flag i:nth-child(1),.flag i:nth-child(3){background:#008751}.flag i:nth-child(2){background:#fff}
+#prog{position:absolute;left:0;top:5px;height:3px;background:var(--gold);width:0}
+.brand{position:absolute;left:48px;top:26px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);font-weight:600}.brand b{color:var(--white)}
+.dots{position:absolute;right:48px;top:24px;display:flex;gap:8px}.dots i{width:34px;height:6px;border-radius:3px;background:rgba(255,255,255,.15)}.dots i.on{background:var(--gold)}
+.scene{position:absolute;inset:0;padding:74px 72px 140px;opacity:0}
+.tag{display:inline-flex;align-items:center;gap:12px;font-size:15px;letter-spacing:.2em;text-transform:uppercase;font-weight:800;margin-bottom:12px}
+.tag .num{background:var(--c);color:#0d1117;width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:18px;letter-spacing:0}
+.tag span{color:var(--c)}
+h1{font-family:"Inter Display",Inter;font-weight:800;font-size:84px;line-height:1.02;letter-spacing:-.02em}
+h2{font-family:"Inter Display",Inter;font-weight:800;font-size:44px;line-height:1.08;letter-spacing:-.015em;margin-bottom:22px}
+.a{opacity:0}
+.row{display:flex;gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px 22px;flex:1}
+.big{font-family:"Inter Display";font-weight:800;font-size:54px;line-height:1}
+.lbl{font-size:17px;color:var(--muted);margin-top:8px;line-height:1.4}.lbl b{color:var(--white);font-weight:600}
+.pill{display:inline-block;padding:8px 16px;border-radius:999px;font-weight:600;font-size:17px;background:rgba(242,193,78,.13);color:var(--gold);border:1px solid rgba(242,193,78,.35)}
+.pill.g{background:rgba(0,168,107,.14);color:#4fd6a4;border-color:rgba(0,168,107,.4)}
+.pill.r{background:rgba(239,91,91,.13);color:#ff8a8a;border-color:rgba(239,91,91,.4)}
+.vs{display:flex;gap:18px;align-items:stretch}.vs .card{text-align:left}
+.score{font-family:"Inter Display";font-weight:900;font-size:110px;line-height:1;letter-spacing:-.02em}
+#cap{position:absolute;left:50%;bottom:40px;transform:translateX(-50%);width:max-content;max-width:1140px;text-align:center;font-size:23px;line-height:1.35;font-weight:500;background:rgba(0,0,0,.6);padding:10px 20px;border-radius:10px;opacity:0}
+.foot{position:absolute;left:48px;right:48px;bottom:12px;font-size:11px;color:rgba(255,255,255,.45)}
+</style></head><body><div id="stage"><div class="flag"><i></i><i></i><i></i></div><div id="prog"></div>
+<div class="brand"><b>Nigeria Today</b> · Tuesday 3 November 2026</div>
+<div class="dots" id="dots"><i></i><i></i><i></i><i></i><i></i></div>
+
+<section class="scene" data-s="title" style="display:flex;flex-direction:column;justify-content:center">
+  <div class="tag a" data-l="0" style="--c:var(--gold)"><span>Trending · explained</span></div>
+  <h1 class="a" data-l="0" data-d=".2">Nigeria Today</h1>
+  <div class="a" data-l="0" data-d="1" style="font-size:28px;color:var(--muted);margin-top:18px">Ebola · Voter register · ₦70k allowance · $21.7bn loan plan · Flamingos</div>
+</section>
+
+<section class="scene" data-s="ebola" data-n="1" style="--c:var(--red)">
+  <div class="tag a" data-l="0"><div class="num">1</div><span>Health</span></div>
+  <h2 class="a" data-l="0" data-d=".1">Ebola: no active case, monitoring continues</h2>
+  <div class="row">
+    <div class="card a" data-l="1"><div class="lbl" style="margin:0 0 6px">Only confirmed case</div><div class="big" style="font-size:38px">20 Oct · Abuja</div><div class="lbl">Traveller from Uganda · <b>evacuated to Switzerland</b></div></div>
+    <div class="card a" data-l="2"><div class="lbl" style="margin:0 0 6px">Adamawa suspected cases</div><div class="big" style="font-size:38px;color:#4fd6a4">2 negative</div><div class="lbl">After <b>two rounds</b> of testing</div></div>
+    <div class="card a" data-l="3"><div class="lbl" style="margin:0 0 6px">Contacts monitored</div><div class="big" data-count="62">0</div><div class="lbl">Last expected to finish <b>13 Nov</b></div></div>
+  </div>
+  <div class="a" data-l="4" style="margin-top:20px"><span class="pill r">Symptoms after exposure? Seek care · NCDC toll-free: 6232</span></div>
+</section>
+
+<section class="scene" data-s="register" data-n="2" style="--c:var(--blue)">
+  <div class="tag a" data-l="0"><div class="num">2</div><span>2027 elections</span></div>
+  <h2 class="a" data-l="0" data-d=".1">Fake entries in the voter register</h2>
+  <div class="row">
+    <div class="card a" data-l="1" style="flex:1.3"><div class="lbl" style="margin:0 0 6px">INEC says</div><div style="font-size:24px;font-weight:700;line-height:1.3">Some registration officials abused their access, creating records with <span style="color:var(--gold)">AI-generated</span> or copied photos</div></div>
+    <div class="card a" data-l="2"><div class="big"><span data-count="1.5" data-dec="1">0</span>M</div><div class="lbl">Flagged as suspicious, of <b>11M+</b> new registrations</div><div class="lbl" style="font-size:13px">Per INEC ICT director Lawrence Bayode</div></div>
+  </div>
+  <div class="row" style="margin-top:18px">
+    <div class="a" data-l="3"><span class="pill">SERAP demands an independent probe</span></div>
+    <div class="a" data-l="3" data-d="4"><span class="pill g">Final register certified 15 Dec 2026</span></div>
+  </div>
+</section>
+
+<section class="scene" data-s="allowance" data-n="3" style="--c:var(--gold)">
+  <div class="tag a" data-l="0"><div class="num">3</div><span>Workers &amp; pay</span></div>
+  <h2 class="a" data-l="0" data-d=".1">The ₦70,000 transport allowance</h2>
+  <div class="row">
+    <div class="card a" data-l="1"><div class="big">₦<span data-count="70000">0</span></div><div class="lbl"><b>Per month · 6 months</b> · from November 2026</div><div class="lbl">Agreed by FG and NLC, 27 Oct</div></div>
+    <div class="card a" data-l="2"><div class="lbl" style="margin:0 0 6px">Trade Union Congress (TUC)</div><div class="big" style="font-size:44px;color:var(--red)">Rejected</div><div class="lbl">Wants a <b>permanent pay rise</b>, not a temporary allowance</div></div>
+  </div>
+  <div class="a" data-l="2" data-d="5" style="margin-top:20px"><span class="pill r">Labour unions openly divided</span></div>
+</section>
+
+<section class="scene" data-s="loan" data-n="4" style="--c:#b48cf2">
+  <div class="tag a" data-l="0"><div class="num">4</div><span>Economy</span></div>
+  <h2 class="a" data-l="0" data-d=".1">A $21.7bn borrowing plan</h2>
+  <div class="row">
+    <div class="card a" data-l="1"><div class="big">$<span data-count="21.7" data-dec="1">0</span>bn</div><div class="lbl"><b>5-year external borrowing plan</b> · now before the National Assembly</div></div>
+    <div class="card a" data-l="2"><div class="big">$<span data-count="10.6" data-dec="1">0</span>bn</div><div class="lbl">For <b>transport</b>: coastal highways, railways</div></div>
+  </div>
+  <div class="a" data-l="2" data-d="5" style="margin-top:20px"><span class="pill">Finance minister: not all of it may be drawn</span></div>
+</section>
+
+<section class="scene" data-s="flamingos" data-n="5" style="--c:var(--green)">
+  <div class="tag a" data-l="0"><div class="num">5</div><span>Sport</span></div>
+  <h2 class="a" data-l="0" data-d=".1">Flamingos into the World Cup semi-finals</h2>
+  <div class="vs">
+    <div class="card a" data-l="1"><div class="lbl" style="margin:0 0 6px">FIFA U-17 Women's World Cup · quarter-final</div><div class="score">1–0</div><div class="lbl"><b>Nigeria vs Venezuela</b> · 89' penalty, captain Oduntan</div></div>
+    <div class="card a" data-l="2"><div class="lbl" style="margin:0 0 6px">Semi-final</div><div class="big" style="font-size:46px">vs Brazil</div><div class="lbl"><b>Wed 4 November</b> · Rabat, Morocco</div><div class="lbl">Chasing Nigeria's <b>first-ever final</b></div></div>
+  </div>
+</section>
+
+<section class="scene" data-s="outro" style="display:flex;flex-direction:column;justify-content:center">
+  <h1 class="a" data-l="0" style="font-size:72px">That's Nigeria Today.</h1>
+  <div class="a" data-l="0" data-d="1.2" style="margin-top:22px"><span class="pill g">Check facts with official sources before you share</span></div>
+</section>
+
+<div id="cap"></div>
+<div class="foot">Sources: NCDC statements (31 Oct–2 Nov); Premium Times, Daily Trust, New Telegraph; INEC (27 Oct); SERAP letter (31 Oct); Punch, Vanguard, Nairametrics; P.M. News (29 Oct); Channels TV, Punch. Independent summary. Facts as of 3 Nov 2026.</div>
+</div>
+<script>
+const CAPS={
+ title:["Nigeria Today: five stories people are talking about, explained in about two minutes."],
+ ebola:["First, Ebola.","Nigeria's only confirmed case this year was a traveller from Uganda, confirmed in Abuja on 20 October and later evacuated to Switzerland.","Two suspected cases in Adamawa tested negative after two rounds of testing.","NCDC says there is no active case. 62 contacts are being monitored, with the last expected to finish on 13 November.","If you have fever, bleeding or severe weakness after possible exposure, seek care, and call NCDC on 6232."],
+ register:["Second, the voter register.","INEC says some registration officials abused their access to create fake records, including photos that appear to be AI-generated.","Its ICT director says about 1.5 million of the 11 million new registrations were flagged as suspicious.","The rights group SERAP wants an independent probe. INEC says the register will be cleaned up before it is certified on 15 December."],
+ allowance:["Third, the ₦70,000 transport allowance.","The federal government agreed with the NLC to pay public servants ₦70,000 a month for six months, starting this November.","But the TUC rejected it, saying workers need a real pay rise, not a temporary allowance. Labour is now openly divided."],
+ loan:["Fourth, borrowing.","The government has sent a five-year external borrowing plan of up to $21.7 billion to the National Assembly.","The finance minister says about $10.6 billion is for transport, including coastal highways and railways, and that not all of it may be drawn."],
+ flamingos:["And finally, some good news.","The Flamingos beat Venezuela 1–0 with an 89th-minute penalty to reach the semi-finals of the U-17 Women's World Cup.","They face Brazil on Wednesday 4 November in Rabat, chasing their first-ever final."],
+ outro:["That's Nigeria Today. Check facts with official sources before you share."]};
+let TL=null;const clamp=x=>Math.max(0,Math.min(1,x)),ease=x=>1-Math.pow(1-x,3);
+function splitCap(s){return s;const w=s.split(' ');let a='',i=0;while(i<w.length&&(a+w[i]).length<s.length/2){a+=w[i]+' ';i++}return a.trim()+'<br>'+w.slice(i).join(' ')}
+window.setTL=tl=>{TL=tl};
+window.render=t=>{
+ document.getElementById('prog').style.width=(100*t/TL.total)+'%';let cur=0;
+ for(const sc of TL.scenes){const el=document.querySelector(`[data-s="${sc.id}"]`);const op=Math.min(clamp((t-sc.start)/0.4),clamp((sc.end-t)/0.4));
+  if(t>=sc.start&&el.dataset.n)cur=+el.dataset.n;
+  el.style.opacity=op;el.style.display=op>0?'':'none';if(op<=0)continue;const L=i=>sc.lines[Math.min(i,sc.lines.length-1)].start;
+  el.querySelectorAll('.a').forEach(a=>{const tin=L(+a.dataset.l)+(+(a.dataset.d||0));const p=ease(clamp((t-tin)/0.55));a.style.opacity=p;a.style.transform=`translateY(${(1-p)*24}px)`;
+   a.querySelectorAll('[data-count]').forEach(c=>{const n=+c.dataset.count,dec=+(c.dataset.dec||0);const v=n*ease(clamp((t-tin)/1.1));c.textContent=dec?v.toFixed(dec):Math.round(v).toLocaleString('en-GB')});
+   if(a.dataset.count){const n=+a.dataset.count;a.textContent=Math.round(n*ease(clamp((t-tin)/1.1)))}});}
+ if(t>=TL.scenes[TL.scenes.length-1].start)cur=6;
+ document.querySelectorAll('#dots i').forEach((d,i)=>d.className=(i<cur?'on':''));
+ const cap=document.getElementById('cap');let txt='',o=0;
+ for(const sc of TL.scenes)sc.lines.forEach((ln,i)=>{if(t>=ln.start-0.15&&t<=ln.end+0.3){txt=CAPS[sc.id][i];o=1}});
+ if(txt)cap.innerHTML=splitCap(txt);cap.style.opacity=o;};
+</script></body></html>
